@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
-};
+  transpilePackages: ['@biowelt/custom-react', '@biowelt/ui-styles'],
+}

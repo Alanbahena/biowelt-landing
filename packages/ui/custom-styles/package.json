@@ -1,0 +1,15 @@
+{
+  "name": "@biowelt/ui-styles",
+  "version": "1.0.0",
+  "description": "Biowelt design system saas implementation",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Bahena",
+  "license": "ISC",
+  "engines": {
+    "npm": ">=8",
+    "node": ">=16.18.0 <17"
+  }
+}

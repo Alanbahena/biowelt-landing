@@ -1,5 +1,6 @@
 {
-  "name": "tsconfig",
+  "name": "@biowelt/tsconfig",
+  "description": "A typescript configuration for biowelt ecosystem",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

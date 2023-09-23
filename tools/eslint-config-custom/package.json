@@ -1,5 +1,6 @@
 {
-  "name": "eslint-config-custom",
+  "name": "@biowelt/eslint-config-custom",
+  "description": "An eslint configuration for biowelt typescript ecosystem",
   "license": "MIT",
   "version": "0.0.0",
   "private": true,
