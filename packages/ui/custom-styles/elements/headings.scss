@@ -6,18 +6,7 @@
 
 @mixin headingFontFamily {
   /* Typography */
-  font-family: $header-font-family;
-  font-weight: 700;
-}
-
-@mixin secondHeadingFontFamily {
-  font-family: $second-header-font-family;
-  font-weight: 500;
-}
-
-@mixin thirdHeadingFontFamily {
   font-family: $body-font-family;
-  font-weight: 600;
 }
 
 @mixin headingElement {
@@ -28,40 +17,28 @@
   @include headingFontFamily();
 }
 
-@mixin secondHeadingElement {
-  margin: 0;
-
-  @include secondHeadingFontFamily();
-}
-
-@mixin thirdHeadingElement {
-  margin: 0;
-
-  @include thirdHeadingFontFamily();
-}
-
 @mixin resetH1 {
   @include headingElement();
+  font-weight: 800;
+  font-size: 4.2rem;
 }
 
 @mixin resetH2 {
-  @include secondHeadingElement();
+  @include headingElement();
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 @mixin resetH3 {
   @include headingElement();
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 @mixin resetH4 {
   @include headingElement();
-}
-
-@mixin resetH5 {
-  @include thirdHeadingElement();
-}
-
-@mixin resetH6 {
-  @include headingElement();
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 @mixin resetHeadings {
