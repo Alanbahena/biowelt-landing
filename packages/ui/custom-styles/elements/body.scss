@@ -1,0 +1,12 @@
+/**
+ * Requires:
+ * /settings/palette
+ * /settings/fonts
+ */
+
+@mixin bodyElement {
+  /* Typography */
+  font-family: $body-font-family;
+  color: $color-dark;
+  font-size: $font-size-root;
+}

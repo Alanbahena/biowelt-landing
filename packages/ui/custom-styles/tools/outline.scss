@@ -1,0 +1,13 @@
+/** Mixins for outline */
+
+/**
+ * Remove outline of element
+ */
+
+@mixin removeOutline() {
+  &,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

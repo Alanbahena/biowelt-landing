@@ -1,0 +1,91 @@
+/**
+ * Requires
+ * /settings/palette
+ * /settings/fonts
+ */
+
+@mixin headingFontFamily {
+  /* Typography */
+  font-family: $header-font-family;
+  font-weight: 700;
+}
+
+@mixin secondHeadingFontFamily {
+  font-family: $second-header-font-family;
+  font-weight: 500;
+}
+
+@mixin thirdHeadingFontFamily {
+  font-family: $body-font-family;
+  font-weight: 600;
+}
+
+@mixin headingElement {
+  /* Box-model */
+  margin: 0;
+
+  /* Typography */
+  @include headingFontFamily();
+}
+
+@mixin secondHeadingElement {
+  margin: 0;
+
+  @include secondHeadingFontFamily();
+}
+
+@mixin thirdHeadingElement {
+  margin: 0;
+
+  @include thirdHeadingFontFamily();
+}
+
+@mixin resetH1 {
+  @include headingElement();
+}
+
+@mixin resetH2 {
+  @include secondHeadingElement();
+}
+
+@mixin resetH3 {
+  @include headingElement();
+}
+
+@mixin resetH4 {
+  @include headingElement();
+}
+
+@mixin resetH5 {
+  @include thirdHeadingElement();
+}
+
+@mixin resetH6 {
+  @include headingElement();
+}
+
+@mixin resetHeadings {
+  h1 {
+    @include resetH1();
+  }
+
+  h2 {
+    @include resetH2();
+  }
+
+  h3 {
+    @include resetH3();
+  }
+
+  h4 {
+    @include resetH4();
+  }
+
+  h5 {
+    @include resetH5();
+  }
+
+  h6 {
+    @include resetH6();
+  }
+}
