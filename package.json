@@ -14,7 +14,7 @@
     "turbo": "latest"
   },
   "name": "biowelt-landing-ecosystem",
-  "description": "A monorepo to group all related to biowelt landing app ecosystem",
+  "description": "A monorepo to group all related to biowelt landing app ecosystem saas",
   "author": "Alan Bahena",
   "packageManager": "npm@10.1.0",
   "workspaces": [
