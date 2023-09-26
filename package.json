@@ -9,11 +9,12 @@
   "devDependencies": {
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
+    "sass": "^1.68.0",
     "tsconfig": "*",
     "turbo": "latest"
   },
   "name": "biowelt-landing-ecosystem",
-  "description": "A monorepo to group all related to biowelt landing app ecosystem",
+  "description": "A monorepo to group all related to biowelt landing app ecosystem saas",
   "author": "Alan Bahena",
   "packageManager": "npm@10.1.0",
   "workspaces": [

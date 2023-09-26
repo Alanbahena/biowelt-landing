@@ -1,0 +1,68 @@
+/**
+ * Requires
+ * /settings/palette
+ * /settings/fonts
+ */
+
+@mixin headingFontFamily {
+  /* Typography */
+  font-family: $body-font-family;
+}
+
+@mixin headingElement {
+  /* Box-model */
+  margin: 0;
+
+  /* Typography */
+  @include headingFontFamily();
+}
+
+@mixin resetH1 {
+  @include headingElement();
+  font-weight: 800;
+  font-size: 4.2rem;
+}
+
+@mixin resetH2 {
+  @include headingElement();
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+@mixin resetH3 {
+  @include headingElement();
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@mixin resetH4 {
+  @include headingElement();
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+@mixin resetHeadings {
+  h1 {
+    @include resetH1();
+  }
+
+  h2 {
+    @include resetH2();
+  }
+
+  h3 {
+    @include resetH3();
+  }
+
+  h4 {
+    @include resetH4();
+  }
+
+  h5 {
+    @include resetH5();
+  }
+
+  h6 {
+    @include resetH6();
+  }
+}
