@@ -1,7 +1,9 @@
-name: Website Deployment
+name: Website Landing Deployment
 on:
   push:
     branches: [production, development, 'feat-*']
+    paths:
+      - 'apps/landing-app'
 jobs:
   lint:
     runs-on: ubuntu-latest

@@ -1,7 +1,9 @@
-name: Website Deployment
+name: Monorepo Deployment
 on:
   push:
     branches: [production, development, 'feat-*']
+    paths-ignore:
+      - 'apps/**'
 jobs:
   lint:
     runs-on: ubuntu-latest
