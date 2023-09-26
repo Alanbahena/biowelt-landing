@@ -3,7 +3,7 @@ on:
   push:
     branches: [production, development, 'feat-*']
     paths:
-      - 'apps/landing-app'
+      - 'apps/**'
 jobs:
   lint:
     runs-on: ubuntu-latest
