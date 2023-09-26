@@ -1,4 +1,3 @@
-import '../styles/globals.scss'
 import clasess from './page.module.scss'
 
 export default function Page(): JSX.Element {
