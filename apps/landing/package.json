@@ -1,5 +1,6 @@
 {
-  "name": "docs",
+  "name": "Landing",
+  "description": "This is the landing page of the SaaS project",
   "version": "1.0.0",
   "private": true,
   "scripts": {
