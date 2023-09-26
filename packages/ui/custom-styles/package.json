@@ -7,9 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alan Bahena",
-  "license": "ISC",
-  "engines": {
-    "npm": ">=8",
-    "node": ">=16.18.0 <17"
-  }
+  "license": "ISC"
 }
