@@ -1,7 +1,7 @@
 name: Website Landing Deployment
 on:
   push:
-    branches: [production, development, 'feat-*']
+    branches: [production, development, 'feature*', 'bugfix*', 'hotfix*', 'test*']
     paths:
       - 'apps/**'
 jobs:
