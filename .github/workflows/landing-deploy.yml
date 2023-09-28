@@ -48,7 +48,7 @@ jobs:
           name: .next
           path: apps/landing/.next
       - name: Cypress run
-        working-directory: apps/landing
+        working-directory: ./apps/landing
         uses: cypress-io/github-action@v6
         with:
           start: npm start
