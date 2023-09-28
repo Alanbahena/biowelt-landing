@@ -38,12 +38,12 @@ jobs:
         with:
           name: .next
           if-no-files-found: error
-          path: /apps/landing/.next
+          path: apps/landing/.next
       - name: Download the build folder
         uses: actions/download-artifact@v3
         with:
           name: .next
-          path: /apps/landing/.next
+          path: apps/landing/.next
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
