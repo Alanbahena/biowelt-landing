@@ -5,3 +5,5 @@ describe('example', () => {
     cy.visit('/')
   })
 })
+
+export {}
