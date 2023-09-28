@@ -48,9 +48,9 @@ jobs:
           name: .next
           path: apps/landing/.next
       - name: Cypress run
-        working-directory: ./apps/landing
         uses: cypress-io/github-action@v6
         with:
+          working-directory: apps/landing
           start: npm start
           browser: chrome
       - name: Test Code
