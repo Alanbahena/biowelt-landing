@@ -7,7 +7,9 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@biowelt/custom-react": "*",
@@ -23,6 +25,7 @@
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "cypress": "^13.3.0",
     "sass": "^1.68.0",
     "typescript": "^4.5.3"
   }
