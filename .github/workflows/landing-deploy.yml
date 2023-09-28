@@ -36,14 +36,14 @@ jobs:
       - name: Save build folder
         uses: actions/upload-artifact@v3
         with:
-          name: build
+          name: .next
           if-no-files-found: error
-          path: build
+          path: /apps/landing/.next
       - name: Download the build folder
         uses: actions/download-artifact@v3
         with:
-          name: build
-          path: build
+          name: .next
+          path: /apps/landing/.next
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
