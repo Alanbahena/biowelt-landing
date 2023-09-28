@@ -1,0 +1,29 @@
+{
+  "name": "landing",
+  "description": "This is the landing page of the SaaS project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@biowelt/custom-react": "*",
+    "@biowelt/ui-styles": "*",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biowelt/eslint-config-custom": "*",
+    "@biowelt/tsconfig": "*",
+    "@next/eslint-plugin-next": "^13.4.19",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "sass": "^1.68.0",
+    "typescript": "^4.5.3"
+  }
+}
