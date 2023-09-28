@@ -4,6 +4,7 @@ on:
     branches: [production, development, 'feature*', 'bugfix*', 'hotfix*', 'test*']
     paths:
       - 'apps/**'
+      - '!apps/app/**'
 jobs:
   lint:
     runs-on: ubuntu-latest
