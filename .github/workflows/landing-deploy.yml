@@ -22,9 +22,6 @@ jobs:
         run: npm run lint
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/landing
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -50,7 +47,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: apps/landing
+          working-directory: ./apps/landing
           start: npm start
           browser: chrome
       - name: Test Code
