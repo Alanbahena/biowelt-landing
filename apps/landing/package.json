@@ -11,6 +11,9 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@biowelt/custom-react": "*",
     "@biowelt/ui-styles": "*",
