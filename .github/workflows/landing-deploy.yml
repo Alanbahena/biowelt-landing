@@ -47,6 +47,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
+          project: ./apps/landing
           start: npm --prefix ./apps/landing start
           browser: chrome
       - name: Test Code
