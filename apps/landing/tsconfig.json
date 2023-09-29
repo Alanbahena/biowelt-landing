@@ -1,0 +1,22 @@
+{
+  "extends": "@biowelt/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "cypress/e2e/example.cy.ts",
+    "cypress/e2e/example/example2.cy.ts",
+    "cypress/support/e2e.ts",
+    "cypress/support/commands.ts"
+  ],
+  "exclude": ["node_modules"]
+}
