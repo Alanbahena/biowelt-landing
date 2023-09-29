@@ -47,9 +47,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: ./apps/landing
-          start: npm start
+          start: npm --prefix ./apps/landing start
           browser: chrome
+          working-directory: ./apps/landing
       - name: Test Code
         run: echo "Testing ..."
   build:
