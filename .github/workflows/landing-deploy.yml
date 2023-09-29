@@ -49,7 +49,6 @@ jobs:
         with:
           start: npm --prefix ./apps/landing start
           browser: chrome
-          working-directory: ./apps/landing
       - name: Test Code
         run: echo "Testing ..."
   build:
