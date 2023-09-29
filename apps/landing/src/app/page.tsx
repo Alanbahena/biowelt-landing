@@ -1,5 +1,5 @@
 import clasess from './page.module.scss'
 
 export default function Page(): JSX.Element {
-  return <div className={clasess.container}>Hello World Landing Page Here Tests</div>
+  return <div className={clasess.container}>Hello World Landing Page Here</div>
 }
