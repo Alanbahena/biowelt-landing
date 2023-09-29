@@ -71,7 +71,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./apps/landing
+        working-directory: apps/landing
     if: github.ref == 'refs/heads/development'
     steps:
       - uses: actions/checkout@v3
@@ -88,7 +88,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./apps/landing
+        working-directory: apps/landing
     if: github.ref == 'refs/heads/production'
     steps:
       - uses: actions/checkout@v3
