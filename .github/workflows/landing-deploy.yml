@@ -66,7 +66,7 @@ jobs:
       - name: Build website
         id: build-website
         run: npm run build
-  deploy:
+  deploy-preview:
     needs: build
     runs-on: ubuntu-latest
     defaults:
@@ -83,6 +83,12 @@ jobs:
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+  deploy-production:
+  needs: build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/landing
     if: github.ref == 'refs/heads/production'
     steps:
       - uses: actions/checkout@v3
