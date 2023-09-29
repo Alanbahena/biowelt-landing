@@ -16,8 +16,8 @@
     "node": ">=16.18.0 <17"
   },
   "dependencies": {
-    "@biowelt/custom-react": "*",
-    "@biowelt/ui-styles": "*",
+    "@biowelt/custom-react": "file:../../packages/custom-react",
+    "@biowelt/ui-styles": "file:../../packages/custom-styles",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
