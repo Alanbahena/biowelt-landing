@@ -1,4 +1,10 @@
 name: Website Landing Deployment
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+defaults:
+  run:
+    working-directory: ./apps/landing
 on:
   push:
     branches: [production, development, 'feature*', 'bugfix*', 'hotfix*', 'test*']
@@ -50,8 +56,6 @@ jobs:
           project: ./apps/landing
           start: npm --prefix ./apps/landing start
           browser: chrome
-      - name: Test Code
-        run: echo "Testing ..."
   build:
     needs: [test, lint]
     runs-on: ubuntu-latest
@@ -63,14 +67,8 @@ jobs:
       - name: Build website
         id: build-website
         run: npm run build
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
-        run: echo "Deploying..."
   report:
-    needs: [lint, deploy]
+    needs: [lint, build]
     if: failure()
     runs-on: ubuntu-latest
     steps:
