@@ -20,8 +20,6 @@ jobs:
         with:
           fetch-depth: 2
       - uses: actions/setup-node@v3
-      - name: Load & cache dependencies
-        uses: ./.github/actions/cached-deps
       - name: Install Vercel CLI
         run: |
           npm install --global vercel@latest
