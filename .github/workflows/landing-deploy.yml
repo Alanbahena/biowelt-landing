@@ -68,7 +68,7 @@ jobs:
         id: build-website
         run: npm run build
   report:
-    needs: [lint, deploy-production, deploy-preview]
+    needs: [lint, build]
     if: failure()
     runs-on: ubuntu-latest
     steps:
