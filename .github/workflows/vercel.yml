@@ -2,9 +2,9 @@ name: Vercel Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-defaults:
-  run:
-    working-directory: ./apps/landing
+# defaults:
+#   run:
+#     working-directory: ./apps/landing
 on:
   push:
     branches: [production, development, 'feature*', 'bugfix*', 'hotfix*', 'test*']
