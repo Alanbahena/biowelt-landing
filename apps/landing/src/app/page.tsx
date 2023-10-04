@@ -1,5 +1,5 @@
-import clasess from './page.module.scss'
+import Header from './(home)/header/_components/header'
 
 export default function Page(): JSX.Element {
-  return <div className={clasess.container}>Hello World Landing Page Development</div>
+  return <Header />
 }
