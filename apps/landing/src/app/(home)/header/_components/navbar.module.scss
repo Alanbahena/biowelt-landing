@@ -1,10 +1,21 @@
 @import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
 
 .container {
   margin-top: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(phone) {
+    justify-content: center;
+  }
+}
+
+.nav {
+  @include respond(tab-land) {
+    display: none;
+  }
 }
 
 .list {
@@ -33,39 +44,5 @@
     gap: 1rem;
   }
 
-  &,
-  &:link,
-  &:visited {
-    text-decoration: none;
-    display: inline-block;
-    border: solid 1.5px;
-    border-radius: 10px;
-
-    cursor: pointer;
-    font-weight: 600;
-
-    color: $color-white;
-    background-color: $color-primary;
-    font-size: 1.8rem;
-    padding: 1.7rem 2.5rem;
-
-    // &:hover {
-    //   background-color: $color-white;
-    //   // outline: solid 1.5px $color-primary;
-    //   border: solid 1.5px $color-primary;
-    //   color: $color-dark;
-    // }
-
-    // transition-duration: 0.4s;
-  }
-
-  &:disabled,
-  &:disabled:hover,
-  &:disabled:active {
-    background-color: black;
-    opacity: 0.4;
-    cursor: none;
-    border: none;
-    color: $color-white;
-  }
+  @include fullBtn();
 }

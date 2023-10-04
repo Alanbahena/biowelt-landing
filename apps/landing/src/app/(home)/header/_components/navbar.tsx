@@ -8,7 +8,7 @@ export default function Navbar(): JSX.Element {
   return (
     <div className={clasess.container}>
       <Image alt="Biowelt logo" height={51} priority src={Logo} width={165} />
-      <nav>
+      <nav className={clasess.nav}>
         <ul className={clasess.list}>
           <li className={clasess.item}>Inicio</li>
           <li className={clasess.item}>Beneficios</li>
