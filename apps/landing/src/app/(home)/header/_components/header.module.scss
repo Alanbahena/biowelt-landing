@@ -1,7 +1,48 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
 .container {
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
 
   display: flex;
   flex-direction: column;
+
+  & header {
+    height: 100%;
+    display: grid;
+    column-gap: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .copywrite {
+      grid-column: 1 / 2;
+      display: grid;
+      row-gap: 1.5rem;
+      justify-items: flex-start;
+      align-content: center;
+
+      & h1 {
+        @include resetH1();
+
+        & span {
+          color: $color-primary;
+        }
+      }
+
+      .btn {
+        .btn-content {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        @include fullBtn();
+      }
+    }
+
+    .image {
+      grid-column: 2 / 3;
+    }
+  }
 }
