@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import { Button } from '@biowelt/custom-react'
 import Arrow from '../../../../../public/assets/arrow-right.png'
+import Dashboard from '../../../../../public/assets/header-image.png'
+import Rentabilidad from '../../../../../public/assets/rentabilidad.png'
+import Eficiencia from '../../../../../public/assets/eficiencia.png'
+import Control from '../../../../../public/assets/control.png'
+import Ai from '../../../../../public/assets/ai.png'
 import Navbar from './navbar'
 import clasess from './header.module.scss'
 
@@ -24,7 +29,27 @@ export default function Header(): JSX.Element {
             </div>
           </Button>
         </div>
-        <div className={clasess.image}>Image</div>
+        <div className={clasess['container-image']}>
+          <Image alt="Biowelt Dashboard" className={clasess.image} src={Dashboard} />
+          <div className={clasess['box-details']}>
+            <div className={clasess.box}>
+              <Image alt="SVG" className={clasess['box-img']} src={Rentabilidad} />
+              <p>Rentabilidad</p>
+            </div>
+            <div className={clasess.box}>
+              <Image alt="SVG" className={clasess['box-img']} src={Eficiencia} />
+              <p>Eficiencia</p>
+            </div>
+            <div className={clasess.box}>
+              <Image alt="SVG" className={clasess['box-img']} src={Control} />
+              <p>Control</p>
+            </div>
+            <div className={clasess.box}>
+              <Image alt="SVG" className={clasess['box-img']} src={Ai} />
+              <p>Tecnología</p>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   )

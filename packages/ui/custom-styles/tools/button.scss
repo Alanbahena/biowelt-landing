@@ -4,6 +4,44 @@
  *  A full BTN with primary color
  */
 
+@mixin fullBtnAlways() {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    border: solid 1.5px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-weight: 600;
+
+    color: $color-white;
+    background-color: $color-primary;
+    font-size: 1.8rem;
+    padding: 1.4rem 2.5rem;
+
+    // &:hover {
+    //   background-color: $color-white;
+    //   // outline: solid 1.5px $color-primary;
+    //   border: solid 1.5px $color-primary;
+    //   color: $color-dark;
+    // }
+
+    // transition-duration: 0.4s;
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active {
+    background-color: black;
+    opacity: 0.4;
+    cursor: none;
+    border: none;
+    color: $color-white;
+  }
+}
+
 @mixin fullBtn() {
   &,
   &:link,
