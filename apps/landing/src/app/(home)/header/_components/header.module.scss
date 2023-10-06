@@ -129,6 +129,7 @@
         row-gap: 2rem;
         z-index: 1000;
 
+        // Responsive
         @include respond(tab-land) {
           grid-row: 6 / 10;
         }
