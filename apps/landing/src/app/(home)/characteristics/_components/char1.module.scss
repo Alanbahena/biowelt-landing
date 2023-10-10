@@ -1,0 +1,89 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
+.container {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+  margin-bottom: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  align-items: center;
+}
+
+.text {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 75%;
+
+  @include respond(ipad-pro) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    @include respond(ipad-pro) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  & p {
+    @include respond(ipad-pro) {
+      text-align: center;
+    }
+  }
+
+  & h4 {
+    @include resetH4();
+  }
+
+  & span {
+    color: $color-primary;
+  }
+
+  & hr {
+    width: 50px;
+    height: 2px;
+    background-color: $color-primary;
+    border: none;
+  }
+
+  & h2 {
+    @include resetH2();
+  }
+}
+
+.image {
+  grid-column: 2 / 3;
+
+  @include respond(ipad-pro) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .dash1 {
+    width: 120%;
+    height: auto;
+
+    @include respond(ipad-pro) {
+      width: 110%;
+      transform: translateX(45px);
+    }
+
+    @include respond(phone) {
+      transform: translateX(25px);
+    }
+  }
+}
