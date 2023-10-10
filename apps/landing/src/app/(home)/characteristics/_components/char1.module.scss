@@ -1,0 +1,16 @@
+.container {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+}
+
+.text {
+  grid-column: 1 / 2;
+}
+
+.image {
+  grid-column: 2 / 3;
+}
