@@ -1,0 +1,39 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+
+.container {
+  grid-column: full-start / full-end;
+  grid-row: 2 / 3;
+  background-color: rgba($color-primary, $alpha: 0.05);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      6,
+      [col-start] minmax(min-content, 21rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.box {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+
+  &-header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &-image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &-text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
