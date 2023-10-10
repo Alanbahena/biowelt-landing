@@ -75,6 +75,7 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(10, 1fr);
+      z-index: -1;
 
       @include respond(tab-land) {
         grid-column: 1 / 3;
