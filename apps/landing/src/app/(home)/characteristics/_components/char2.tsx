@@ -27,26 +27,28 @@ export default function Char2(): JSX.Element {
         </div>
         <div className={clasess.card}>
           <Image alt="Invenario" className={clasess.pov} src={Inv} />
-          <h3>Punto de Venta</h3>
+          <h3>Inventario</h3>
           <p>
-            Nuestro punto de venta es la solución integral que tu negocio necesita para agilizar las
-            ventas y brindar una experiencia de compra excepcional a tus clientes.
+            Adquiere únicamente los alimentos que necesitas, haz uso de aquellos productos que
+            tienen su fecha de caducidad próxima, ofrece porciones adecuadas de alimentos y anticipa
+            la cantidad de comida que se necesita cada día.
           </p>
         </div>
         <div className={clasess.card}>
           <Image alt="Coporativo" className={clasess.pov} src={Corp} />
-          <h3>Punto de Venta</h3>
+          <h3>Tablero corporativo</h3>
           <p>
-            Nuestro punto de venta es la solución integral que tu negocio necesita para agilizar las
-            ventas y brindar una experiencia de compra excepcional a tus clientes.
+            Nuestra plataforma corporativa incrementa la eficiencia operativa, la toma de decisiones
+            basada en datos, la experiencia del cliente y tu relación con proveedores.
           </p>
         </div>
         <div className={clasess.card}>
           <Image alt="Cocina" className={clasess.pov} src={Cocina} />
-          <h3>Punto de Venta</h3>
+          <h3>Cocina</h3>
           <p>
-            Nuestro punto de venta es la solución integral que tu negocio necesita para agilizar las
-            ventas y brindar una experiencia de compra excepcional a tus clientes.
+            Perfecciona los procesos de producción con las cantidades adecuadas en los platillos
+            gracias a nuestra plataforma de cocina integral con recetarios y descripción de metodos
+            de preparación.
           </p>
         </div>
       </div>
