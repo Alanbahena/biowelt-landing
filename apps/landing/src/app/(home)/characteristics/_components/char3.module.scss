@@ -19,7 +19,10 @@
 
 .box {
   margin-top: 8rem;
+  margin-bottom: 8rem;
   grid-column: center-start / center-end;
+  display: grid;
+  row-gap: 5rem;
 
   .text {
     display: flex;
@@ -40,4 +43,42 @@
       color: $color-primary;
     }
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    justify-content: center;
+    justify-items: center;
+    row-gap: 3rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+
+      .img {
+        width: 255px;
+        height: auto;
+      }
+
+      & p {
+        font-size: 2rem;
+        text-align: center;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.btn {
+  justify-self: center;
+
+  .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @include fullBtnAlways();
 }

@@ -1,3 +1,9 @@
+import Image from 'next/image'
+import { Button } from '@biowelt/custom-react'
+import Arrow from '../../../../../public/assets/arrow-right.png'
+import Card1 from '../../../../../public/assets/card-1.png'
+import Card2 from '../../../../../public/assets/card-2.png'
+import Card3 from '../../../../../public/assets/card-3.png'
 import clasess from './char3.module.scss'
 
 export default function Char3(): JSX.Element {
@@ -11,6 +17,26 @@ export default function Char3(): JSX.Element {
             Unos <span>sencillos</span> pasos y listo
           </h2>
         </div>
+        <div className={clasess.cards}>
+          <div className={clasess.card}>
+            <Image alt="Card 1" className={clasess.img} src={Card1} />
+            <p>Crea una lista de productos y ordena tu inventario</p>
+          </div>
+          <div className={clasess.card}>
+            <Image alt="Card 1" className={clasess.img} src={Card2} />
+            <p>Crea una lista de productos y ordena tu inventario</p>
+          </div>
+          <div className={clasess.card}>
+            <Image alt="Card 1" className={clasess.img} src={Card3} />
+            <p>Crea una lista de productos y ordena tu inventario</p>
+          </div>
+        </div>
+        <Button className={clasess.btn} link="/dashboard">
+          <div className={clasess['btn-content']}>
+            <p>Empezar demo</p>
+            <Image alt="arrow" height={11} priority src={Arrow} width={17} />
+          </div>
+        </Button>
       </div>
     </section>
   )
