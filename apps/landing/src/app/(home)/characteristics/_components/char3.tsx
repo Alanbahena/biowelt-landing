@@ -23,11 +23,11 @@ export default function Char3(): JSX.Element {
             <p>Crea una lista de productos y ordena tu inventario</p>
           </div>
           <div className={clasess.card}>
-            <Image alt="Card 1" className={clasess.img} src={Card2} />
+            <Image alt="Card 2" className={clasess.img} src={Card2} />
             <p>Diseña recetarios para cada uno de tus platillos</p>
           </div>
           <div className={clasess.card}>
-            <Image alt="Card 1" className={clasess.img} src={Card3} />
+            <Image alt="Card 3" className={clasess.img} src={Card3} />
             <p>Levanta comandas y tu restaurante se actualiza en tiempo real</p>
           </div>
         </div>

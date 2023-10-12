@@ -60,10 +60,13 @@
       .img {
         width: 255px;
         height: auto;
+
+        @include respond(mini-phone) {
+          transform: translateX(-20px);
+        }
       }
 
       & p {
-        font-size: 2rem;
         text-align: center;
         width: 50%;
       }
