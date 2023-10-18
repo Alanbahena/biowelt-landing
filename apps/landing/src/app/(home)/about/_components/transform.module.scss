@@ -1,0 +1,181 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+
+  & hr {
+    width: 50px;
+    height: 2px;
+    background-color: $color-primary;
+    border: none;
+  }
+
+  & h4 {
+    @include resetH4();
+  }
+
+  & span {
+    color: $color-primary;
+  }
+}
+
+.content {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr minmax(min-content, max-content);
+  grid-template-rows: repeat(2, min-content);
+  justify-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  align-items: center;
+
+  .txt1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    background-color: rgba($yellow-primary, $alpha: 0.1);
+    border-radius: 50px;
+
+    @include respond(tab-half) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .visual {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    display: grid;
+
+    .img {
+      width: 100%;
+      height: auto;
+      justify-self: center;
+
+      @include respond(tab-half) {
+        width: 300px;
+      }
+
+      @include respond(mini-tab) {
+        width: 200px;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      @include respond(mini-phone) {
+        width: 130%;
+      }
+    }
+  }
+
+  .txt2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    background-color: rgba($yellow-primary, $alpha: 0.1);
+    border-radius: 50px;
+
+    @include respond(tab-half) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .txt3 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    background-color: rgba($yellow-primary, $alpha: 0.1);
+    border-radius: 50px;
+
+    @include respond(tab-half) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}
+
+.client-box {
+  display: grid;
+  grid-template-columns: min-content minmax(min-content, 600px);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+
+  @include respond(phone) {
+    row-gap: 3.5rem;
+  }
+
+  .client {
+    grid-column: 1 / 2;
+    width: 205px;
+    height: auto;
+
+    @include respond(tab-half) {
+      width: 165px;
+    }
+
+    @include respond(phone) {
+      width: 145px;
+      grid-column: 1 / 3;
+      grid-row: 1 /2;
+    }
+  }
+
+  & div {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    row-gap: 1rem;
+
+    @include respond(phone) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      text-align: center;
+    }
+
+    & h4 {
+      @include resetH4();
+
+      & span {
+        color: $color-primary;
+      }
+    }
+  }
+}
