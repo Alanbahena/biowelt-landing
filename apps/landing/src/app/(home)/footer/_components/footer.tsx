@@ -4,7 +4,11 @@ export default function Footer(): JSX.Element {
   return (
     <>
       <hr className={clasess.hr} />
-      <div className={clasess.container}>Footer</div>
+      <footer className={clasess.container}>
+        <div className={clasess.logo}>Logo</div>
+        <div className={clasess.Cta}>CTA</div>
+        <div className={clasess.copywrite}>COPY</div>
+      </footer>
     </>
   )
 }
