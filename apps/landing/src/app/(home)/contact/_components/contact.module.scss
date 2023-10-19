@@ -116,3 +116,13 @@
     border-color: $color-primary;
   }
 }
+
+.btn {
+  .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @include fullBtnAlways();
+}

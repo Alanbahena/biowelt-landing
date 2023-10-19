@@ -36,7 +36,7 @@ export default function Contact(): JSX.Element {
           <textarea className={clasess.textarea} placeholder="Escribe tu mensaje aquí" required />
           <Button className={clasess.btn}>
             <div className={clasess['btn-content']}>
-              <p>Empezar demo</p>
+              <p>Enviar</p>
               <Image alt="arrow" height={11} priority src={Arrow} width={17} />
             </div>
           </Button>
