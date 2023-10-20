@@ -17,12 +17,6 @@ export default function Navbar(): JSX.Element {
           <li className={clasess.item}>Blog</li>
         </ul>
       </nav>
-      <Button className={clasess['btn--full']} link="/dashboard">
-        <div className={clasess['btn-content']}>
-          <p>Empezar demo</p>
-          <Image alt="arrow" height={11} priority src={Arrow} width={17} />
-        </div>
-      </Button>
     </div>
   )
 }
