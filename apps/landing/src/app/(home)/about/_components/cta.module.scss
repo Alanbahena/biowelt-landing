@@ -23,10 +23,14 @@
   & h2 {
     @include resetH2();
     color: $color-white;
-    flex: 1 0 170px;
+    flex: 1 0 250px;
 
     @include respond(phone) {
       text-align: center;
+    }
+
+    @include respond(mini-phone) {
+      display: none;
     }
   }
 
