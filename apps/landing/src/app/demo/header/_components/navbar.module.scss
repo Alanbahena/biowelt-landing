@@ -38,13 +38,3 @@
     color: $color-primary;
   }
 }
-
-.btn--full {
-  .btn-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  @include fullBtn();
-}
