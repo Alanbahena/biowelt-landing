@@ -10,7 +10,7 @@ export default function Cta(): JSX.Element {
         Listo para comenzar? <br />
         Agenda una nueva demo ahora mismo
       </h2>
-      <Button className={clasess['btn--full']} link="/dashboard">
+      <Button className={clasess['btn--full']} link="/demo">
         <div className={clasess['btn-content']}>
           <p>Empezar demo</p>
           <Image alt="arrow" height={11} priority src={Arrow} width={17} />

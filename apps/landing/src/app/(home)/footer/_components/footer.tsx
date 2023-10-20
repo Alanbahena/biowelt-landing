@@ -21,7 +21,7 @@ export default function Footer(): JSX.Element {
             Listo para comenzar? <br />
             Agenda una nueva demo ahora mismo
           </p>
-          <Button className={clasess.btn}>
+          <Button className={clasess.btn} link="/demo">
             <div className={clasess['btn-content']}>
               <p>Empezar Demo</p>
               <Image alt="arrow" height={11} priority src={Arrow} width={17} />

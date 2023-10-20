@@ -22,7 +22,7 @@ export default function Header(): JSX.Element {
             Automatiza toda las lineas de producción de tu restaurante partiendo desde un control de
             inventario en tiempo real desde cualquier dispositivo conectado a internet.{' '}
           </p>
-          <Button className={clasess.btn} link="/dashboard">
+          <Button className={clasess.btn} link="/demo">
             <div className={clasess['btn-content']}>
               <p>Empezar demo</p>
               <Image alt="arrow" height={11} priority src={Arrow} width={17} />
