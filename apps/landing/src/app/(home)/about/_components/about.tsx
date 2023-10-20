@@ -5,7 +5,7 @@ import Mision from './mision'
 
 export default function About(): JSX.Element {
   return (
-    <section className={clasess.container}>
+    <section className={clasess.container} id="#acerca">
       <Transform />
       <Cta />
       <Mision />

@@ -7,7 +7,7 @@ import Char5 from './char5'
 
 export default function Characteristics(): JSX.Element {
   return (
-    <section className={clasess.container}>
+    <section className={clasess.container} id="#caracteristicas">
       <Char1 />
       <Char2 />
       <Char3 />
