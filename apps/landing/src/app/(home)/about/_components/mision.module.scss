@@ -63,7 +63,8 @@
     }
 
     @include respond(phone) {
-      width: 110%;
+      transform: translateX(-40px);
+      width: 130%;
     }
   }
 }
