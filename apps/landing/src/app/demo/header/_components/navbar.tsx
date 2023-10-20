@@ -11,11 +11,21 @@ export default function Navbar(): JSX.Element {
       </Link>
       <nav className={clasess.nav}>
         <ul className={clasess.list}>
-          <li className={clasess.item}>Inicio</li>
-          <li className={clasess.item}>Beneficios</li>
-          <li className={clasess.item}>Caracteristicas</li>
-          <li className={clasess.item}>Acerca</li>
-          <li className={clasess.item}>Blog</li>
+          <Link className={clasess.item} href="/">
+            Inicio
+          </Link>
+          <Link className={clasess.item} href="/">
+            Beneficios
+          </Link>
+          <Link className={clasess.item} href="/">
+            Caracteristicas
+          </Link>
+          <Link className={clasess.item} href="/">
+            Acerca
+          </Link>
+          <Link className={clasess.item} href="/">
+            Blog
+          </Link>
         </ul>
       </nav>
     </div>

@@ -7,7 +7,7 @@ import clasess from './benefits.module.scss'
 
 export default function Benefits(): JSX.Element {
   return (
-    <section className={clasess.container}>
+    <section className={clasess.container} id="#beneficios">
       <div className={clasess.box}>
         <div className={clasess['box-header']}>
           <p>Una plataforma todo en uno de analíticas, datos y automatización en la nube</p>
