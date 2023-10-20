@@ -62,7 +62,8 @@
         height: auto;
 
         @include respond(mini-phone) {
-          transform: translateX(-20px);
+          width: 210px;
+          transform: translateX(-5px);
         }
       }
 
