@@ -1,0 +1,18 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      6,
+      [col-start] minmax(min-content, 21rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: 100vh repeat(12, min-content);
+
+  @include respond(tab-land) {
+    grid-template-rows: repeat(13, min-content);
+  }
+}

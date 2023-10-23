@@ -1,0 +1,67 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
+.container {
+  grid-column: center-start / center-end;
+  grid-row: 2 / 3;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 7rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+
+  & hr {
+    width: 50px;
+    height: 2px;
+    background-color: $color-primary;
+    border: none;
+  }
+
+  & h4 {
+    @include resetH4();
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  column-gap: 5rem;
+  row-gap: 5rem;
+
+  .card {
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow:
+      6px 6px 8px rgba($color-dark, 0.1),
+      -6px -6px 8px rgba($color-dark, 0.1);
+
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 10px;
+
+    @include respond(ipad-pro) {
+      justify-items: center;
+      text-align: center;
+    }
+
+    & h3 {
+      @include resetH3();
+    }
+  }
+
+  .pov {
+    width: 65px;
+    height: 65px;
+  }
+}

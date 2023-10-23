@@ -1,0 +1,88 @@
+@import '@biowelt/ui-styles/settings';
+@import '@biowelt/ui-styles/tools';
+@import '@biowelt/ui-styles/elements/headings';
+
+.container {
+  grid-column: full-start / full-end;
+  grid-row: 3 / 4;
+  background-color: rgba($color-primary, 0.05);
+
+  display: grid;
+
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      6,
+      [col-start] minmax(min-content, 21rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.box {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  grid-column: center-start / center-end;
+  display: grid;
+  row-gap: 5rem;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+
+    & hr {
+      width: 50px;
+      height: 2px;
+      background-color: $color-primary;
+      border: none;
+    }
+
+    & span {
+      color: $color-primary;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    justify-content: center;
+    justify-items: center;
+    row-gap: 3rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+
+      .img {
+        width: 255px;
+        height: auto;
+
+        @include respond(mini-phone) {
+          width: 210px;
+          transform: translateX(-15px);
+        }
+      }
+
+      & p {
+        text-align: center;
+        width: 50%;
+      }
+    }
+  }
+}
+
+.btn {
+  justify-self: center;
+
+  .btn-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @include fullBtnAlways();
+}
