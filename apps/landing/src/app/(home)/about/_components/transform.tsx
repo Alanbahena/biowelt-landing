@@ -7,7 +7,7 @@ export default function Transform(): JSX.Element {
   return (
     <div className={clasess.container}>
       <div className={clasess.text}>
-        <h4>Transforma tu negocio</h4>
+        <h4>¿Estás listo para la transformación?</h4>
         <hr />
         <h2>
           ¡Descubre la revolución culinaria: donde la tradición se encuentra con la{' '}
@@ -26,10 +26,10 @@ export default function Transform(): JSX.Element {
         <Image alt="Biowelt Client" className={clasess.client} src={Client} />
         <div>
           <p>
-            “La gestión de los procesos internos de un restaurante es un problema frecuente, ya que
-            los servicios actuales ofrecen características complejas que no son muy fáciles de usar
-            y disminuir nuestros esfuerzos como dueños para enfocarnos en la calidad del cliente es
-            nuestra prioridad”
+            “La complejidad y el uso practico de un software para restaurantes se ha convertido en
+            un problema frecuente, disminuir nuestros esfuerzos, automatizar nuestros procesos y
+            poder tomar acciones en base a datos que incrementen la satisfacción y relación con
+            comensales es nuestra prioridad”
           </p>
           <h4>
             Santiago Ramirez - <span>Dueño de restaurante mexicano</span>

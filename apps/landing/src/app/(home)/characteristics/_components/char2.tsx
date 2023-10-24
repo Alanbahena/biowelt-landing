@@ -21,8 +21,9 @@ export default function Char2(): JSX.Element {
           <Image alt="Punto de venta" className={clasess.pov} src={Pov} />
           <h3>Punto de Venta</h3>
           <p>
-            Nuestro punto de venta es la solución integral que tu negocio necesita para agilizar las
-            ventas y brindar una experiencia de compra excepcional a tus clientes.
+            Nuestro punto de venta es la solución integral más práctica y fácil de usar que tu
+            negocio necesita para agilizar las ventas y brindar una experiencia de compra
+            excepcional a tus clientes.
           </p>
         </div>
         <div className={clasess.card}>
@@ -36,10 +37,11 @@ export default function Char2(): JSX.Element {
         </div>
         <div className={clasess.card}>
           <Image alt="Coporativo" className={clasess.pov} src={Corp} />
-          <h3>Tablero corporativo</h3>
+          <h3>Tablero Administrativo</h3>
           <p>
-            Nuestra plataforma corporativa incrementa la eficiencia operativa, la toma de decisiones
-            basada en datos, la experiencia del cliente y tu relación con proveedores.
+            Nuestra plataforma administrativa incrementa la eficiencia operativa, la toma de
+            decisiones basada en datos, la experiencia del cliente y tu relación con proveedores al
+            tomar decisiones en base a datos.
           </p>
         </div>
         <div className={clasess.card}>

@@ -14,9 +14,8 @@ export default function Char1(): JSX.Element {
           </h2>
         </div>
         <p>
-          Formaliza los procesos internos de tu restaurante al ordenar tu inventario por estantes
-          para así poder identificar y rastrear el comportamiento de tus productos con mayor
-          facilidad.
+          Mejora la organización de tu restaurante al ordenar tu inventario por estantes y así
+          podrás identificar y rastrear el comportamiento de tus productos con mayor facilidad.
         </p>
       </div>
       <div className={clasess.image}>

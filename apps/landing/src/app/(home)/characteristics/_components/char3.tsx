@@ -11,7 +11,7 @@ export default function Char3(): JSX.Element {
     <section className={clasess.container}>
       <div className={clasess.box}>
         <div className={clasess.text}>
-          <h4>¿Cómo funciona?</h4>
+          <h4>¿Cómo funciona el detrás de cámaras?</h4>
           <hr />
           <h2>
             Unos <span>sencillos</span> pasos y listo
@@ -20,7 +20,7 @@ export default function Char3(): JSX.Element {
         <div className={clasess.cards}>
           <div className={clasess.card}>
             <Image alt="Card 1" className={clasess.img} src={Card1} />
-            <p>Crea una lista de productos y ordena tu inventario</p>
+            <p>Crea una lista de productos y ordena tu inventario por estantes</p>
           </div>
           <div className={clasess.card}>
             <Image alt="Card 2" className={clasess.img} src={Card2} />
