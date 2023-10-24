@@ -16,11 +16,13 @@ export default function Header(): JSX.Element {
       <header>
         <div className={clasess.copywrite}>
           <h1>
-            Una nueva forma de administrar tu negocio, lean restaurant <span>tu ventaja</span>
+            <span>Práctico,</span> eficiente e innovador. <br />
+            Un restaurante lean, <span>tu ventaja</span>
           </h1>
           <p>
-            Automatiza toda las lineas de producción de tu restaurante partiendo desde un control de
-            inventario en tiempo real desde cualquier dispositivo conectado a internet.{' '}
+            Descubre como revolucionar y facilitar los procesos internos de tu restaurante partiendo
+            desde un control de inventario en tiempo real desde cualquier dispositivo conectado a
+            internet.
           </p>
           <Button className={clasess.btn} link="/demo">
             <div className={clasess['btn-content']}>

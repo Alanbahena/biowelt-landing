@@ -25,8 +25,8 @@ export default function Benefits(): JSX.Element {
             <Image alt="icon1" className={clasess.icon} src={Automize} />
             <h3>Automatiza el control de tu restaurante</h3>
             <p>
-              Reduce perdidas y desperdicios al conectar el control de inventario con tu cocina
-              (Recetarios) y punto de venta.
+              Reduce perdidas, alimentos caducados, tiempo y esfuerzo automatizando tu control de
+              inventario y cocina.
             </p>
           </div>
           <div className={clasess.benefit}>

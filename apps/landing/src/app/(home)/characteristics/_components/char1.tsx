@@ -15,9 +15,10 @@ export default function Char1(): JSX.Element {
           </h2>
         </div>
         <p>
-          Reduce y elimina perdidas economicas por perdidas de inventario y falta de precisión en
-          producción (Cocina) al mantener un bajo inventario y conectarlo en tiempo real con
-          recetarios y punto de venta.
+          Reduce perdidas economicas por falta de precisión en cantidades de compra, robo, alimentos
+          caducados, baja calidad. Deja que nuestro programa se encargue de mantener un bajo
+          inventario y de anticipar tus compras al conectarlo en tiempo real con recetarios y punto
+          de venta.
         </p>
       </div>
       <div className={clasess.image}>
