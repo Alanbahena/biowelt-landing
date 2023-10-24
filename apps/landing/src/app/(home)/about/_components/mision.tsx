@@ -9,9 +9,10 @@ export default function Mision(): JSX.Element {
         <h4>Transformando el futuro: Nuestra misión es tu éxito</h4>
         <hr />
         <h2>
-          Nuestra <span>misión</span> es ofrecer herramientas tecnológicas fáciles de usar para
-          restaurantes en México que gestionen y <span>automaticen</span> los procesos internos y
-          que se acomoden a las necesidades de tu <span>restaurante.</span>
+          Nuestra <span>misión</span> es crear un impacto positivo en el medio ambiente al facilitar
+          la gestión de restaurantes con herramientas <span>prácticas</span> que reduzcan la
+          cantidad de desperdicios generados y mejoren el enfoque en <span>calidad</span> de
+          servicio, satisfacción y relación con comensales.
         </h2>
       </div>
       <div className={clasess.image}>
