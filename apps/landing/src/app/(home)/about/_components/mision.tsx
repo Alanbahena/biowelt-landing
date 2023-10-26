@@ -9,10 +9,10 @@ export default function Mision(): JSX.Element {
         <h4>Transformando el futuro: Nuestra misión es tu éxito</h4>
         <hr />
         <h2>
-          Nuestra <span>misión</span> es crear un impacto positivo en el medio ambiente al facilitar
-          la gestión de restaurantes con herramientas <span>prácticas</span> que reduzcan la
-          cantidad de desperdicios generados y mejoren el enfoque en <span>calidad</span> de
-          servicio, satisfacción y relación con comensales.
+          Nuestra <span>misión</span> es ofrecer herramientas prácticas que potencializen la
+          <span> exactitud</span> administrativa y financiera de un restaurante y así crear un
+          <span> impacto</span> positivo en el medio ambiente al reducir la cantidad de desperdicios
+          generados.
         </h2>
       </div>
       <div className={clasess.image}>

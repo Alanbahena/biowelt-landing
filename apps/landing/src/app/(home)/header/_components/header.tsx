@@ -20,9 +20,8 @@ export default function Header(): JSX.Element {
             Un restaurante lean, <span>tu ventaja</span>
           </h1>
           <p>
-            Descubre como revolucionar y facilitar los procesos internos de tu restaurante partiendo
-            desde un control de inventario en tiempo real desde cualquier dispositivo conectado a
-            internet.
+            Descubre como revolucionar y facilitar los procesos internos de tu restaurante con el
+            software más intuitivo y fácil de usar desde cualquier dispositivo conectado a internet.
           </p>
           <Button className={clasess.btn} link="/demo">
             <div className={clasess['btn-content']}>
