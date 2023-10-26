@@ -24,7 +24,7 @@ export default function Char3(): JSX.Element {
           </div>
           <div className={clasess.card}>
             <Image alt="Card 2" className={clasess.img} src={Card2} />
-            <p>Diseña recetarios para cada uno de tus platillos</p>
+            <p>Diseña recetarios y manual de operaciones para cada uno de tus platillos</p>
           </div>
           <div className={clasess.card}>
             <Image alt="Card 3" className={clasess.img} src={Card3} />

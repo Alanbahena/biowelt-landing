@@ -39,18 +39,17 @@ export default function Char2(): JSX.Element {
           <Image alt="Coporativo" className={clasess.pov} src={Corp} />
           <h3>Tablero Administrativo</h3>
           <p>
-            Nuestra plataforma administrativa incrementa la eficiencia operativa, la toma de
-            decisiones basada en datos, la experiencia del cliente y tu relación con proveedores al
-            tomar decisiones en base a datos.
+            Nuestra plataforma administrativa incrementa la eficiencia operativa y financiera, al
+            calcular los costos exactos, la toma de decisiones basada en datos, la experiencia del
+            cliente y tu relación con proveedores.
           </p>
         </div>
         <div className={clasess.card}>
           <Image alt="Cocina" className={clasess.pov} src={Cocina} />
           <h3>Cocina</h3>
           <p>
-            Perfecciona los procesos de producción con las cantidades adecuadas en los platillos
-            gracias a nuestra plataforma de cocina integral con recetarios y descripción de metodos
-            de preparación.
+            Gracias a nuestra plataforma de cocina integral podrás desarrollar un manual de
+            operaciones, diseñar recetas, medir las cantidades exactas y más.
           </p>
         </div>
       </div>
