@@ -13,7 +13,7 @@ export default function Footer(): JSX.Element {
         <div className={clasess.logo}>
           <Image alt="Biowelt logo" className={clasess['logo-img']} priority src={Logo} />
           <p>
-            Práctico, eficiente e innovador. <br /> Un restaurant lean, <span>tu ventaja</span>
+            Práctico, eficiente e innovador. <br /> Un restaurante lean, <span>tu ventaja</span>
           </p>
         </div>
         <div className={clasess.Cta}>
